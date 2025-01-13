@@ -2,27 +2,48 @@
     <div class="container">
         <div class="contact d-flex flex-column align-items-center justify-content-center">
             <h1 class="text-uppercase fw-bold">contact section</h1>
-            <span class="fs-3"><i class="fa-solid fa-star"></i></span>
+            <span class="fs-3 star"><i class="fa-solid fa-star"></i></span>
         </div>
         <form action="" class="w-50 p-3 mx-auto mt-3 py-5" (submit)="handleSubmit($event)">
-            <div class="position-relative overflow-hidden  ">
-                <input id="userName" type="text" placeholder="userName" name="userName" [(ngModel)]="userName"  class="z-3 w-100 mb-3 border-0 border-bottom py-3">
-                <label for="userName" [style.transform]="userName.length === 0 ? 'translateY(300%)' : 'translateY(-30%)'" [style.zIndex]="userName.length === 0 ? -1 : 1" >
+            <div class="position-relative mb-4 ">
+                <input id="userName" type="text" placeholder="userName" name="userName" [(ngModel)]="userName"  class="z-3 w-100  border-0 border-bottom py-3">
+                  <span class="bottom shap"></span>
+                  <span class="right shap"></span>
+                  <span class="top shap"></span>
+                  <span class="left shap"></span>
+                <label for="userName" [style.transform]="userName.length === 0 ? 'translateY(100%)' : 'translateY(-78%)'" [style.zIndex]="userName.length === 0 ? -1 : 1" >
                     UserName:
                 </label>
-              
               </div>
-              <div class="position-relative overflow-hidden  ">
-                <input id="userAge" type="text" placeholder="userAge" name="userAge" [(ngModel)]="userAge"  class="z-3 w-100 mb-3 border-0 border-bottom py-3">
-                <label for="userAge"  [style.transform]="userAge.length === 0 ? 'translateY(300%)' : 'translateY(-30%)'" [style.zIndex]="userName.length === 0 ? -1 : 1" >UserAge:</label>
+              <div class="position-relative mb-4 ">
+                <input id="userAge" type="text" placeholder="userAge" name="userAge" [(ngModel)]="userAge"  class="z-3 w-100  border-0 border-bottom py-3">
+                  <span class="bottom shap"></span>
+                  <span class="right shap"></span>
+                  <span class="top shap"></span>
+                  <span class="left shap"></span>
+                <label for="userAge" [style.transform]="userAge.length === 0 ? 'translateY(100%)' : 'translateY(-78%)'" [style.zIndex]="userAge.length === 0 ? -1 : 1" >
+                    UserAge:
+                </label>
               </div>
-              <div class="position-relative overflow-hidden  ">
-                <input id="email" type="text" placeholder="userEmail" name="email" [(ngModel)]="userEmail"  class="z-3 w-100 mb-3 border-0 border-bottom py-3">
-                <label for="email"  [style.transform]="userEmail.length === 0 ? 'translateY(300%)' : 'translateY(-30%)'" [style.zIndex]="userName.length === 0 ? -1 : 1">UserEmail:</label>
+              <div class="position-relative mb-4 ">
+                <input id="userEmail" type="email" placeholder="userEmail" name="userEmail" [(ngModel)]="userEmail"  class="z-3 w-100  border-0 border-bottom py-3">
+                  <span class="bottom shap"></span>
+                  <span class="right shap"></span>
+                  <span class="top shap"></span>
+                  <span class="left shap"></span>
+                <label for="userEmail" [style.transform]="userEmail.length === 0 ? 'translateY(100%)' : 'translateY(-78%)'" [style.zIndex]="userEmail.length === 0 ? -1 : 1" >
+                    UserEmail:
+                </label>
               </div>
-              <div class="position-relative overflow-hidden  ">
-                <input id="userPassward" type="text" placeholder="userPassword" name="userPassword" [(ngModel)]="userPassword"  class="z-3 w-100 mb-3 border-0 border-bottom py-3">
-                <label for="userPassward"  [style.transform]="userPassword.length === 0 ? 'translateY(300%)' : 'translateY(-30%)'" [style.zIndex]="userName.length === 0 ? -1 : 1">userPassword:</label>
+              <div class="position-relative mb-4 ">
+                <input id="userPassword" type="text" placeholder="userPassword" name="userPassword" [(ngModel)]="userPassword"  class="z-3 w-100  border-0 border-bottom py-3">
+                  <span class="bottom shap"></span>
+                  <span class="right shap"></span>
+                  <span class="top shap"></span>
+                  <span class="left shap"></span>
+                <label for="userPassword" [style.transform]="userPassword.length === 0 ? 'translateY(100%)' : 'translateY(-78%)'" [style.zIndex]="userPassword.length === 0 ? -1 : 1" >
+                    UserPassword:
+                </label>
               </div>
             <button type="submit" class="btn  text-white mt-4">send Message</button>
         </form>
