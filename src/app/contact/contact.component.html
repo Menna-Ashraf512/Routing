@@ -1,0 +1,30 @@
+<section class="pb-4">
+    <div class="container">
+        <div class="contact d-flex flex-column align-items-center justify-content-center">
+            <h1 class="text-uppercase fw-bold">contact section</h1>
+            <span class="fs-3"><i class="fa-solid fa-star"></i></span>
+        </div>
+        <form action="" class="w-50 p-3 mx-auto mt-3 py-5" (submit)="handleSubmit($event)">
+            <div class="position-relative overflow-hidden  ">
+                <input id="userName" type="text" placeholder="userName" name="userName" [(ngModel)]="userName"  class="z-3 w-100 mb-3 border-0 border-bottom py-3">
+                <label for="userName" [style.transform]="userName.length === 0 ? 'translateY(300%)' : 'translateY(-30%)'" [style.zIndex]="userName.length === 0 ? -1 : 1" >
+                    UserName:
+                </label>
+              
+              </div>
+              <div class="position-relative overflow-hidden  ">
+                <input id="userAge" type="text" placeholder="userAge" name="userAge" [(ngModel)]="userAge"  class="z-3 w-100 mb-3 border-0 border-bottom py-3">
+                <label for="userAge"  [style.transform]="userAge.length === 0 ? 'translateY(300%)' : 'translateY(-30%)'" [style.zIndex]="userName.length === 0 ? -1 : 1" >UserAge:</label>
+              </div>
+              <div class="position-relative overflow-hidden  ">
+                <input id="email" type="text" placeholder="userEmail" name="email" [(ngModel)]="userEmail"  class="z-3 w-100 mb-3 border-0 border-bottom py-3">
+                <label for="email"  [style.transform]="userEmail.length === 0 ? 'translateY(300%)' : 'translateY(-30%)'" [style.zIndex]="userName.length === 0 ? -1 : 1">UserEmail:</label>
+              </div>
+              <div class="position-relative overflow-hidden  ">
+                <input id="userPassward" type="text" placeholder="userPassword" name="userPassword" [(ngModel)]="userPassword"  class="z-3 w-100 mb-3 border-0 border-bottom py-3">
+                <label for="userPassward"  [style.transform]="userPassword.length === 0 ? 'translateY(300%)' : 'translateY(-30%)'" [style.zIndex]="userName.length === 0 ? -1 : 1">userPassword:</label>
+              </div>
+            <button type="submit" class="btn  text-white mt-4">send Message</button>
+        </form>
+    </div>
+</section>

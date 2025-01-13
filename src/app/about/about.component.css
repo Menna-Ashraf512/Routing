@@ -1,0 +1,30 @@
+section{
+    height: 700px;
+    background-color: #1ABC9C;
+}
+.about{
+    color: white;
+    & img{
+        height: 265px;
+        width: 250px;
+    }
+    & span {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    & span::after{
+        content: "";
+        display: inline-block;
+        border:2px solid white;
+        width: 100px;
+        margin:0px 0px 3px 10px;
+    }
+    & span::before{
+        content: "";
+        display: inline-block;
+        border:2px solid white;
+        width: 100px;
+        margin:0px 10px 3px 0px;
+    }
+} 
+    
