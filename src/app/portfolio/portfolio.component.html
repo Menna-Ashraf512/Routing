@@ -55,8 +55,10 @@
           </div>
         </div>
       </div>
-      <div class="modal_item position-fixed top-0 bottom-0 w-100 d-flex justify-content-center align-items-center" (click)="closeModel()" [class]="{'d-none':!showModel}">
-          <img [src]="selectedImage" (click)="$event.stopPropagation()" alt="modal Image">
-      </div>
+      @if (showModel) {
+        <div class="modal_item position-fixed top-0 bottom-0 w-100 d-flex justify-content-center align-items-center" (click)="closeModel()">
+            <img [src]="selectedImage" (click)="$event.stopPropagation()" alt="modal Image">
+        </div>
+      }
 </section>
 
