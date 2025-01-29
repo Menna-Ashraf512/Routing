@@ -1,0 +1,122 @@
+section{
+    height: auto;
+    background-color:white;
+    padding-top: 120px;
+}
+.contact{
+    color: #2C3E50;
+    font-weight: 700;
+
+    & span.star {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    & span.star::after{
+        content: "";
+        display: inline-block;
+        border:2px solid #2C3E50;
+        width: 100px;
+        margin:0px 0px 3px 10px;
+    }
+    & span.star::before{
+        content: "";
+        display: inline-block;
+        border:2px solid #2C3E50;
+        width: 100px;
+        margin:0px 10px 3px 0px;
+    }
+
+} 
+
+.btn{
+    background-color: #1ABC9C;
+}
+.btn:active{
+    border-color:2px  #1ABC9C;
+    background-color: #1ABC9C;
+}
+
+label {
+    position: absolute;
+    left: 0; 
+    color: #1ABC9C;
+    transform: translateY(150%); 
+    transition: all 0.5s ease-in-out; 
+    pointer-events: none;
+} 
+
+
+
+  input {
+  font-weight: 500;
+  color: rgb(31, 28, 28);
+  padding: 0.35em 0.45em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+span.shap {
+  position: absolute;
+  background-color: hsl(237, 19%, 38%);
+  transition: transform 0.5s ease;
+}
+
+.bottom,
+.top {
+  height: 2px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+.left,
+.right {
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+
+.bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+input:focus ~ .bottom {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.right {
+  right: 0;
+  transform-origin: top right;
+}
+
+input:focus ~ .right {
+  transform-origin: bottom right;
+  transform: scaleY(1);
+}
+
+.top {
+  top: 0;
+  transform-origin: top left;
+}
+
+input:focus ~ .top {
+  transform-origin: top right;
+  transform: scaleX(1);
+}
+
+.left {
+  left: 0;
+  transform-origin: bottom left;
+}
+
+input:focus ~ .left {
+  transform-origin: top left;
+  transform: scaleY(1);
+}

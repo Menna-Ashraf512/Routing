@@ -1,0 +1,64 @@
+<section>
+    <div class="container">
+    <div class="portfolio d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-uppercase fw-bold">portfolio component</h1>
+        <span class="fs-3"><i class="fa-solid fa-star"></i></span>          
+    </div>
+        <div class="row g-5 py-3">
+          <div class="col-md-6 col-lg-4 animate__animated animate__lightSpeedInLeft" (click)="item('poert1.png')">
+            <div class="position-relative w-100 item">
+              <img src="poert1.png" class="rounded-3 w-100" alt="poert1">
+              <div class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center  rounded-3">
+                <i  class="text-white fa-solid fa-plus fa-6x "></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 animate__animated animate__zoomIn" (click)="item('port2.png')">
+            <div class="position-relative w-100 item">
+              <img src="port2.png" class="rounded-3 w-100" alt="poert1">
+              <div class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center  rounded-3">
+                <i  class="text-white fa-solid fa-plus fa-6x "></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 animate__animated animate__lightSpeedInRight " (click)="item('port3.png')">
+            <div class="position-relative w-100 item">
+              <img src="port3.png" class="rounded-3 w-100" alt="poert1">
+              <div class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center  rounded-3">
+                <i  class="text-white fa-solid fa-plus fa-6x "></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 animate__animated animate__lightSpeedInLeft" (click)="item('poert1.png')">
+            <div class="position-relative w-100 item">
+              <img src="poert1.png" class="rounded-3 w-100" alt="poert1">
+              <div class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center  rounded-3">
+                <i  class="text-white fa-solid fa-plus fa-6x "></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 animate__animated animate__zoomIn" (click)="item('port2.png')">
+            <div class="position-relative w-100 item">
+              <img src="port2.png" class="rounded-3 w-100" alt="poert1">
+              <div class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center  rounded-3">
+                <i  class="text-white fa-solid fa-plus fa-6x "></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 animate__animated animate__lightSpeedInRight" (click)="item('port3.png')">
+            <div class="position-relative w-100 item">
+              <img src="port3.png" class="rounded-3 w-100" alt="poert1">
+              <div class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center  rounded-3">
+                <i  class="text-white fa-solid fa-plus fa-6x "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @if (showModel) {
+        <div class="modal_item position-fixed top-0 bottom-0 w-100 d-flex justify-content-center align-items-center" (click)="closeModel()">
+            <img [src]="selectedImage" (click)="$event.stopPropagation()" alt="modal Image">
+        </div>
+      }
+</section>
+

@@ -1,0 +1,28 @@
+.footer{
+    background-color: #2C3E50;
+    color: aliceblue;
+}
+
+
+.icon_social .circle {
+    position: relative;
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    display: flex;
+    border: 1px solid white;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .icon_social .circle i {
+    font-size: 24px; /* حجم الأيقونة */
+    color: #4267B2; /* لون الأيقونة */
+  }
+
+  .end_footer{
+    background-color: #1A252F;
+    color: white;
+  }
+  
